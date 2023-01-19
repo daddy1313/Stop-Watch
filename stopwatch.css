@@ -1,0 +1,64 @@
+body{
+  background:linear-gradient(to right, #34Af37 , #7348FA) ;
+}
+.timerBtn{
+    width: 80px;
+    height: 30px;
+    border: 3px solid;
+    border-radius: 12px;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+    font-family: consolas, monospace;
+}
+
+#timeDisplay{
+    font-size: 75px;
+    color: #40c437;
+    font-family: consolas, monospace;
+}
+#timeContainer{
+    text-align: center;
+    border: 3px solid;
+    border-radius: 25px;
+    background-color: #222222;
+}
+
+
+
+.timerBtn {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    
+    color: #FFFFFF;
+    margin-right: .5cm;
+    margin-left: .5cm;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.9s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .timerBtn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1.4s
+  }
+  
+  .timerBtn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
